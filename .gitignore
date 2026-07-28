@@ -70,3 +70,6 @@ logs/
 # .mvn/
 # mvnw
 # mvnw.cmd
+
+pom.xml
+src/main/resources/hibernate.cfg.xml
