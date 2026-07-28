@@ -70,3 +70,5 @@ logs/
 # .mvn/
 # mvnw
 # mvnw.cmd
+# Hibernate config with password
+src/main/resources/hibernate.cfg.xml
