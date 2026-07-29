@@ -70,3 +70,10 @@ logs/
 # .mvn/
 # mvnw
 # mvnw.cmd
+
+# Ignore Maven Project File
+pom.xml
+
+# Ignore Hibernate Configuration
+hibernate.cfg.xml
+src/main/resources/hibernate.cfg.xml
