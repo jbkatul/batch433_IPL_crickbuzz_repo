@@ -4,6 +4,7 @@ import java.util.List;
 import com.tka.dao.IPLDao;
 import com.tka.entity.Player;
 
+
 public class IPLClient {
 
 	public static void main(String[] args) {
@@ -14,10 +15,9 @@ public class IPLClient {
 
 		System.out.println("------ ALL PLAYERS ------");
 
-		for (Player p : players) {
+		for(Player p : players){
 			System.out.println(p);
 		}
-	
 	}
 
 }
