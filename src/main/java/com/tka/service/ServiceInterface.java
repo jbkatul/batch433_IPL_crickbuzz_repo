@@ -8,9 +8,7 @@ public interface ServiceInterface {
 	
 	public abstract Player getOnePlayer(int pk);
 	public abstract List<Player> getallPlayer();
-	
 	public abstract List<Player> getallPlayer(String team);
-	
 	public abstract List<Player> getallBatsman(String team);
 	public abstract List<Player> getallBowlers(String team);
 	public abstract List<Player> getallAllrounders(String team);
