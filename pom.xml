@@ -4,4 +4,23 @@
   <artifactId>IPL_Crickbuzz_project</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <description>This project is for git and github practice</description>
+  
+  <dependencies>
+   <!-- Source: https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.33</version>
+    <scope>compile</scope>
+</dependency>
+
+<!-- Source: https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>5.6.15.Final</version>
+    <scope>compile</scope>
+</dependency>
+  </dependencies>
+  
 </project>
