@@ -2,20 +2,27 @@ package com.tka.dao;
 
 import java.util.List;
 
+import org.hibernate.Criteria;
+import org.hibernate.Transaction;
+
 import com.tka.entity.Player;
+import com.tka.utility.Utility;
 
 public class IPLDao implements DaoInterfaces{
 
+	
+	
 	@Override
 	public Player getOnePlayer(int pk) {
-		// TODO Auto-generated method stub
-		return null;
+		return Utility.getSession().load(Player.class, pk);
 	}
 
 	@Override
 	public List<Player> getallPlayer() {
-		// TODO Auto-generated method stub
-		return null;
+		@SuppressWarnings("deprecation")
+		Criteria criteria = Utility.getSession().createCriteria(Player.class);
+		List<Player> list = criteria.list();
+		return list;
 	}
 
 	@Override
