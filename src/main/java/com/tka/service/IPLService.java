@@ -67,5 +67,12 @@ public class IPLService implements ServiceInterface {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	
+	@Override
+	public List<Player> searchPlayerByName(String name) {
+	    dao = new IPLDao();
+	    return dao.searchPlayerByName(name);
+	}
 
 }

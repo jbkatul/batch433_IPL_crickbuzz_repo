@@ -11,5 +11,7 @@ public interface DaoInterfaces {
 	public abstract Player InsertOnePlayer(Player obj);
 	public abstract Player UpdateOnePlayer(Player obj);
 	public abstract Boolean DeleteOnePlayer(int pk);
+	
+	public abstract List<Player> searchPlayerByName(String name);
 
 }
