@@ -53,13 +53,14 @@ public class IPLService implements ServiceInterface {
 	@Override
 	public Player InsertOnePlayer(Player obj) {
 		// TODO Auto-generated method stub
-		return null;
+		return dao.InsertOnePlayer(obj);
+		
 	}
 
 	@Override
 	public Player UpdateOnePlayer(Player obj) {
 		// TODO Auto-generated method stub
-		return null;
+		return dao.UpdateOnePlayer(obj);
 	}
 
 	@Override

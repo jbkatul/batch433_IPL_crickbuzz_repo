@@ -3,6 +3,7 @@ package com.tka.dao;
 import java.util.List;
 
 import org.hibernate.Criteria;
+import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import com.tka.entity.Player;
@@ -28,13 +29,25 @@ public class IPLDao implements DaoInterfaces{
 	@Override
 	public Player InsertOnePlayer(Player obj) {
 		// TODO Auto-generated method stub
-		return null;
+		Session session = Utility.getSession();
+		Transaction tr = session.beginTransaction();
+		session.save(obj);
+		tr.commit();
+		session.close();
+		return obj;
 	}
 
 	@Override
 	public Player UpdateOnePlayer(Player obj) {
 		// TODO Auto-generated method stub
-		return null;
+		Session session = Utility.getSession();
+		Transaction tr = session.beginTransaction();
+		
+		session.update(obj); 
+		
+		tr.commit();
+		session.close();
+		return obj;
 	}
 
 	@Override
